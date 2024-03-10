@@ -355,10 +355,8 @@ $username = $row['username'];
         <nav class="nav" id="nav-menu">
             <ion-icon name="close-outline" class="header__close" id="close-menu"></ion-icon>
             <ul class="nav__list">
-                <!-- <li class="nav__item"><a href="#" class="nav__link">Home</a></li> -->
-                <!-- <li class="nav__item"><a href="reservation.php" class="nav__link">Reservation</a></li> -->
-                <li class="nav__item"><a href="history.php" class="nav__link">History</a></li>
-                <li class="nav__item"><a href="logout.php" class="nav__link">Logout</a></li>
+                <li class="nav__item"><a href="history.php" class="nav__link">ประวัติ</a></li>
+                <li class="nav__item"><a href="logout.php" class="nav__link">ออกจากระบบ</a></li>
             </ul>
         </nav>
         <ion-icon name="menu-outline" class="header__toggle" id="toggle-menu"></ion-icon>
