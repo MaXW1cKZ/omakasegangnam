@@ -286,13 +286,6 @@ if (isset($_GET["mail"]) && isset($_GET["pass"])) {
 </head>
 
 <body>
-    <!-- แถบ navigate bar -->
-    <div>
-
-        <nav class="navigation">
-        </nav>
-    </div>
-
     <!-- กรอบ Login และ Register -->
     <div class="wrapper">
         <!-- หน้า Login -->
