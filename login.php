@@ -298,7 +298,7 @@ if (isset($_GET["mail"]) && isset($_GET["pass"])) {
         <!-- หน้า Login -->
         <div class="form-box login">
 
-            <h2>Login</h2>
+            <h2>เข้าสู่ระบบ</h2>
             <form>
                 <div class="input-box">
                     <span class="icon">
