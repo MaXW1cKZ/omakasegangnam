@@ -129,33 +129,6 @@ if (!$conn) {
             gap: 5px;
         }
 
-        .search--box {
-            background-color: #ebe9e9;
-            border-radius: 15px;
-            color: #120a7f;
-            display: flex;
-            align-items: center;
-            gap: 7px;
-            padding: 4px 12px;
-        }
-
-        .search--box input {
-            background: transparent;
-            padding: 10px;
-        }
-
-        .search--box i {
-            font-size: 1.2rem;
-            cursor: pointer;
-            transition: all 0.5s ease-out;
-        }
-
-        .search--box i:hover {
-            transform: scale(1.1);
-            color: #e60f0b;
-        }
-
-        /* detail income */
         .card-container {
             width: 100%;
             border-radius: 10px;
@@ -167,7 +140,7 @@ if (!$conn) {
             grid-template-columns: auto auto auto auto;
             gap: 10px;
             background-color: #e8ede7;
-            border: #120a7f;
+            /* border: #120a7f; */
         }
 
         .course {
@@ -321,7 +294,7 @@ if (!$conn) {
                 
                 <div class="relative overflow-x-auto shadow-md sm:rounded-lg" style="margin-top: 20px">
                     <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400" >
-                        <thead class="text-xs text-gray-700 uppercase dark:text-gray-400">
+                    <thead class="text-xs text-gray-700 uppercase dark:text-gray-400">
                             <tr >
                                 <th scope="col" class="px-6 py-3 bg-gray-50 dark:bg-gray-800" style="width: 500px; background-color: #201658; color:white; padding-left: 130px;">
                                     ชื่อคอร์ส
