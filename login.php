@@ -67,29 +67,9 @@ if (isset($_GET["mail"]) && isset($_GET["pass"])) {
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            /* background-color: #000000; */
             background: url(https://images.unsplash.com/photo-1504416285472-eccf03dd31eb?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat;
             background-size: cover;
             background-position: center;
-        }
-
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            padding: 8px 100px;
-            background-color: #0000006a;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 99;
-        }
-
-        .logo {
-            font-size: 2em;
-            color: #FFC700;
-            user-select: none;
         }
 
         .navigation a {
@@ -306,18 +286,10 @@ if (isset($_GET["mail"]) && isset($_GET["pass"])) {
 </head>
 
 <body>
-    <!-- https://d1rxvdm0rjmjgy.cloudfront.net/srv/images/sushi-chef-omakase-1600x900.jpg -->
-
     <!-- แถบ navigate bar -->
     <div>
 
         <nav class="navigation">
-            <!-- <a href="#">HOTELS & ROOMS</a>
-            <a href="#">ACTIVITY</a>
-            <a href="#">CART</a>
-            <a href="#">CREATE-ACCOUNT</a>
-            <a href="#">SIGN-IN</a> -->
-            <!-- <button class="btnLogin-popup">Login</button> -->
         </nav>
     </div>
 
@@ -333,25 +305,22 @@ if (isset($_GET["mail"]) && isset($_GET["pass"])) {
                         <ion-icon name="mail-outline"></ion-icon>
                     </span>
                     <input type="email" name="mail" required>
-                    <label>Email</label>
+                    <label>อีเมล</label>
                 </div>
                 <div class="input-box">
                     <span class="icon">
                         <ion-icon name="lock-closed-outline"></ion-icon>
                     </span>
                     <input type="password" name="pass" required>
-                    <label>Password</label>
+                    <label>รหัสผ่าน</label>
                 </div>
                 <div class="remember-forgot">
-                    <!-- <label><input type="checkbox" name="checkbox"> -->
-                    <!-- Remember me</label> -->
-                    <!-- <a href="#">Forgot password?</a> -->
                 </div>
                 <a href="reservation.php">
-                    <button type="submit" class="btn" id="btnlogin" name="login" value="Login">Log in</button>
+                    <button type="submit" class="btn" id="btnlogin" name="login" value="Login">เข้าสู่ระบบ</button>
                 </a>
                 <div class="login-register">
-                    <p>Don't have an account?
+                    <p>ไม่มีบัญชี?
                         <a href="#" class="register-link">Register</a>
                     </p>
                 </div>
@@ -359,65 +328,61 @@ if (isset($_GET["mail"]) && isset($_GET["pass"])) {
         </div>
         <!-- หน้า Register -->
         <div class="form-box register">
-            <h2>Registration</h2>
+            <h2>สมัครสมาชิก</h2>
             <form action="register_db.php" method="POST">
                 <div class="input-box">
                     <span class="icon">
                         <ion-icon name="people-outline"></ion-icon>
                     </span>
                     <input type="firstname" name="first_name" required>
-                    <label>First name</label>
+                    <label>ชื่อจริง</label>
                 </div>
                 <div class="input-box">
                     <span class="icon">
                         <ion-icon name="people-outline"></ion-icon>
                     </span>
                     <input type="lastname" name="last_name" required>
-                    <label>Lastname</label>
+                    <label>นามสกุล</label>
                 </div>
                 <div class="input-box">
                     <span class="icon">
                         <ion-icon name="call-outline"></ion-icon>
                     </span>
                     <input type="number" name="phone" required>
-                    <label>Phone</label>
+                    <label>เบอร์โทรศัพท์</label>
                 </div>
                 <div class="input-box">
                     <span class="icon">
                         <ion-icon name="mail-outline"></ion-icon>
                     </span>
                     <input type="email" name="mail" required>
-                    <label>Email</label>
+                    <label>อีเมล</label>
                 </div>
                 <div class="input-box">
                     <span class="icon">
                         <ion-icon name="id-card-outline"></ion-icon>
                     </span>
                     <input type="text" name="username" required>
-                    <label>Username</label>
+                    <label>ชื่อผู้ใช้</label>
                 </div>
                 <div class="input-box">
                     <span class="icon">
                         <ion-icon name="lock-closed-outline"></ion-icon>
                     </span>
                     <input type="password" name="password" required>
-                    <label>Password</label>
+                    <label>รหัสผ่าน</label>
                 </div>
                 <div class="input-box">
                     <span class="icon">
                         <ion-icon name="lock-closed-outline"></ion-icon>
                     </span>
                     <input type="password" name="password" required>
-                    <label>Confirm Password</label>
+                    <label>ยืนยันรหัสผ่าน</label>
                 </div>
-                <!-- <div class="remember-forgot">
-                    <label><input type="checkbox">
-                        I agree to terms & conditions </label>
-                </div> -->
-                <button type="submit" class="btn" name="btnregis">Register</button>
+                <button type="submit" class="btn" name="btnregis">สมัครสมาชิก</button>
                 <div class="login-register">
-                    <p>Already have an account?
-                        <a href="#" class="login-link">Login</a>
+                    <p>มีบัญชีอยู่แล้ว?
+                        <a href="#" class="login-link">เข้าสู่ระบบ</a>
                     </p>
                 </div>
             </form>
